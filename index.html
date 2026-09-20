@@ -12,6 +12,13 @@
     <title>Dadan | IT Professional</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -93,7 +100,7 @@
                         <a href="#contact" class="btn btn-secondary">
                             Contact Me
                         </a>
-                        <a href="assets/documents/CV-Dadan.pdf" class="btn btn-secondary" target="_blank"
+                        <a href="assets/document/CV-Dadan.pdf" class="btn btn-secondary" target="_blank"
                             rel="noopener noreferrer">
                             Download CV
                         </a>
@@ -573,9 +580,11 @@
                                 GitHub
                             </a>
 
-                            <a href="#project-school" class="project-button project-button-overview">
+                            <button type="button" class="project-button project-button-overview"
+                                data-modal="modal-school">
                                 Overview
-                            </a>
+                            </button>
+
 
                         </div>
 
@@ -627,9 +636,11 @@
                                 GitHub
                             </a>
 
-                            <a href="#project-attendance" class="project-button project-button-overview">
+                            <button type="button" class="project-button project-button-overview"
+                                data-modal="modal-attendance">
                                 Overview
-                            </a>
+                            </button>
+
 
                         </div>
 
@@ -680,9 +691,11 @@
                                 GitHub
                             </a>
 
-                            <a href="#project-return" class="project-button project-button-overview">
+                            <button type="button" class="project-button project-button-overview"
+                                data-modal="modal-return">
                                 Overview
-                            </a>
+                            </button>
+
 
                         </div>
 
@@ -734,6 +747,64 @@
             </div>
 
         </section>
+
+        <!-- ==================== MODAL OVERVIEW PROYEK ==================== -->
+        <!-- Modal Proyek 01 -->
+        <dialog id="modal-school" class="project-modal">
+            <div class="modal-box">
+                <button type="button" class="modal-close" aria-label="Tutup Modal">&times;</button>
+                <div class="modal-header">
+                    <span class="project-type">WEB APPLICATION</span>
+                    <h3>School Management Information System</h3>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Rincian lengkap sistem manajemen sekolah yang dibangun untuk mengelola pembayaran siswa dan
+                        verifikasi bukti bayar secara otomatis menggunakan teknologi OCR (PaddleOCR).
+                    </p>
+                    <h4>Fitur Utama:</h4>
+                    <ul>
+                        <li>Manajemen data siswa dan tagihan spp.</li>
+                        <li>Verifikasi bukti transfer berbasis OCR menggunakan PaddleOCR & Python.</li>
+                        <li>Integrasi REST API antara modul backend Laravel dan microservice Python.</li>
+                    </ul>
+                </div>
+            </div>
+        </dialog>
+
+        <!-- Modal Proyek 02 -->
+        <dialog id="modal-attendance" class="project-modal">
+            <div class="modal-box">
+                <button type="button" class="modal-close" aria-label="Tutup Modal">&times;</button>
+                <div class="modal-header">
+                    <span class="project-type">ATTENDANCE SYSTEM</span>
+                    <h3>Village Staff Attendance System</h3>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Aplikasi absensi berbasis web dengan validasi lokasi radius geofencing dan penilaian
+                        kedisiplinan perangkat desa menggunakan metode Weighted Product.
+                    </p>
+                </div>
+            </div>
+        </dialog>
+
+        <!-- Modal Proyek 03 -->
+        <dialog id="modal-return" class="project-modal">
+            <div class="modal-box">
+                <button type="button" class="modal-close" aria-label="Tutup Modal">&times;</button>
+                <div class="modal-header">
+                    <span class="project-type">DECISION SUPPORT SYSTEM</span>
+                    <h3>Return Package Priority System</h3>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Sistem Pendukung Keputusan (SPK) untuk menentukan prioritas penanganan paket retur menggunakan
+                        algoritma multi-criteria TOPSIS.
+                    </p>
+                </div>
+            </div>
+        </dialog>
 
     </main>
 

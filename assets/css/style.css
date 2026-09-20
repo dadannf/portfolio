@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5px;
 }
 
 body {
@@ -736,6 +737,68 @@ button {
     font-size: 0.8rem;
 }
 
+/* ================================
+   MODAL OVERVIEW
+================================ */
+.project-modal {
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    max-width: 600px;
+    width: calc(100% - 32px);
+    margin: auto;
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+    background: #ffffff;
+}
+
+.project-modal::backdrop {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+.modal-box {
+    position: relative;
+    padding: 32px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    border: none;
+    background: transparent;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #697386;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #172033;
+}
+
+.modal-header h3 {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    color: #172033;
+}
+
+.modal-body {
+    margin-top: 16px;
+    color: #566174;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.modal-body h4 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #172033;
+}
+
+.modal-body ul {
+    padding-left: 20px;
+}
 
 /* ================================
    RESPONSIVE
