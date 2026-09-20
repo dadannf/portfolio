@@ -248,6 +248,23 @@ button {
     font-weight: 800;
 }
 
+.profile-image {
+    aspect-ratio: 1;
+
+    overflow: hidden;
+
+    background: #e8f0ff;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
 .hero-card-info {
     padding-top: 24px;
 }
@@ -478,6 +495,35 @@ button {
     color: #697386;
 }
 
+/* ================================
+   EDUCATION
+================================ */
+
+.education-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 32px;
+
+    border: 1px solid #dfe4ec;
+    background: #ffffff;
+}
+
+.education-card h3 {
+    margin-top: 8px;
+
+    font-size: 1.4rem;
+}
+
+.education-meta {
+    color: #697386;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+}
 
 /* ================================
    PROJECTS
@@ -721,6 +767,11 @@ button {
 
     .btn {
         width: 100%;
+    }
+
+    .education-card {
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     .section {
