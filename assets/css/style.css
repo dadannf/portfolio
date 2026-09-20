@@ -427,6 +427,7 @@ button {
 }
 
 
+
 /* ================================
    EXPERIENCE
 ================================ */
@@ -541,6 +542,9 @@ button {
     border: 1px solid #dfe5ec;
     background: #ffffff;
 
+    display: flex;
+    flex-direction: column;
+
     transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
@@ -590,21 +594,71 @@ button {
     font-size: 0.9rem;
 }
 
-.project-link {
-    display: inline-block;
+/* ================================
+   PROJECT ACTIONS
+================================ */
 
-    margin-top: 28px;
+.project-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
-    color: #2563eb;
-
-    font-size: 0.85rem;
-    font-weight: 800;
+    margin-top: auto;
+    padding-top: 28px;
 }
 
-.project-link:hover {
-    text-decoration: underline;
+.project-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 40px;
+
+    padding: 0 16px;
+
+    border: 1px solid transparent;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
 }
 
+.project-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* GitHub */
+
+.project-button-github {
+    border-color: #d9e0e8;
+
+    background: #ffffff;
+
+    color: #172033;
+}
+
+.project-button-github:hover {
+    border-color: #172033;
+}
+
+
+/* Overview */
+
+.project-button-overview {
+    background: #2563eb;
+
+    color: #ffffff;
+}
+
+.project-button-overview:hover {
+    background: #1d4ed8;
+}
 
 /* ================================
    CONTACT
